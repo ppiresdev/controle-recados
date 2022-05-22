@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/storage.js" defer></script>
+    <script src="../js/utils.js" defer></script>
+    <script src="../js/criar_conta.js" defer></script>
+    <title>Criar Conta</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="column-left"></section>
+      <section class="column-right">
+        <h1>CRIAR CONTA</h1>
+        <form>
+          <div id="inputs">
+            <div class="msgUsuario"></div>
+            <div>
+              <input
+                id="inputCriarUser"
+                type="email"
+                placeholder="E-mail em letras minúsculas"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="msgInputUsuario"></div>
+            <div class="divSenha">
+              <input
+                id="inputCriarPassword"
+                type="password"
+                placeholder="Senha"
+                autocomplete="off"
+                required
+              />
+              <i id="visibilidadeBtnSenha" class="visibilidadeBtn"
+                ><span id="icon1" class="material-icons-outlined">
+                  visibility_off
+                </span></i
+              >
+            </div>
+            <div class="msgInputSenha"></div>
+            <div class="divSenha">
+              <input
+                id="inputRepetirPassword"
+                type="password"
+                placeholder="Repita a senha"
+                autocomplete="off"
+                required
+              />
+              <i id="visibilidadeBtnRepetir" class="visibilidadeBtn"
+                ><span id="icon2" class="material-icons-outlined">
+                  visibility_off
+                </span></i
+              >
+            </div>
+            <div class="msgInputRepetirSenha"></div>
+          </div>
+          <div id="buttons">
+            <button id="btnCriarConta" type="submit">CRIAR CONTA AGORA</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

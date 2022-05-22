@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(123, 123, 228, 1) 0%,
+    rgba(118, 127, 229, 1) 41%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 60vw;
+  min-height: 60vh;
+  display: flex;
+  border-radius: 10px;
+  border: 5px solid #fff;
+}
+
+.column-left {
+  flex: 0.5;
+  min-height: 60vh;
+  background-image: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.column-right {
+  flex: 0.5;
+  min-height: 60vh;
+  background-color: rgb(28, 28, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+}
+
+.column-right h1 {
+  margin-top: 1.5rem;
+}
+
+/* #inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 300px;
+  height: 3rem;
+  padding: 0 0 0 0.5rem;
+  font-size: 1.1rem;
+  border: 1px solid silver;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+#btnEntrar,
+#btnCriarConta {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#btnEntrar:hover,
+#btnCriarConta:hover {
+  background-color: rgb(9, 9, 54);
+  color: #fff;
+}
+
+#buttons,
+#inputs,
+#divSenha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons p {
+  font-size: 1.1rem;
+  display: inline;
+  margin-bottom: 1.5rem;
+}
+
+#buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#buttons a:hover {
+  color: #ff4949;
+}
+
+.msg_exibir {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(255, 0, 0, 0.5);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ef9a9a;
+  width: 300px;
+  display: block;
+}
+
+/*Tabela*/
+#usuarioUsandoApp {
+  color: #1e4a08;
+}
+
+.tabela {
+  width: 100%;
+  user-select: none;
+  text-align: left;
+}
+
+.tabela th {
+  height: 50px;
+  background-color: #1e4a08;
+  /* padding-left: 20px; */
+  font-size: 1.2rem;
+  text-align: center;
+  min-width: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.tabela td {
+  height: 50px;
+  /* padding-left: 20px; */
+  text-align: center;
+}
+
+.tabela th:last-child,
+.tabela td:last-child {
+  padding: 0;
+  width: 220px;
+  text-align: center;
+}
+
+.tabela tr:hover {
+  background-color: #d6f3e3;
+}
+
+/*Botões na tabela*/
+.button {
+  border-style: none;
+  height: 40px;
+  padding: 6px 12px;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.6s ease;
+}
+
+.button {
+  width: 5rem;
+}
+
+button.green {
+  background-color: #13ce66;
+}
+
+button.red {
+  background-color: #ff4949;
+}
+
+.button:hover {
+  box-shadow: inset 200px 0 0 #00000055;
+}
+
+/*Ocultar e exibir senha*/
+
+.divSenha {
+  position: relative;
+}
+
+.visibilidadeBtn {
+  position: absolute;
+  color: rgb(28, 28, 130);
+  right: 5px;
+  top: 28px;
+
+  cursor: pointer;
+}
+
+#icon,
+#icon1,
+#icon2 {
+  font-size: 1.8rem;
+}
+
+/*Recados*/
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/*Botão sair*/
+.cabecalho button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: red;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cabecalho button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#recados {
+  width: 80vw;
+  display: flex;
+  background-color: #9bd4e2;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0rem 2rem 0;
+}
+
+#descricao {
+  display: block;
+  width: 40%;
+}
+
+#container-recado {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+}
+
+#detalhamento {
+  border-right: 0;
+  display: block;
+  width: 100%;
+}
+
+#detalhamento,
+#descricao {
+  height: 4rem;
+  margin-top: 0;
+}
+
+.botao {
+  background-color: rgba(147, 128, 108, 0.1);
+  color: #666666;
+  font: inherit;
+  font-weight: normal;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.botao:hover {
+  background-color: #1e4a08;
+}
+
+.botao span {
+  font-size: 40px;
+  color: #000;
+  pointer-events: none;
+}
+
+.cls-input {
+  font-size: 1rem;
+  border: 1px solid rgba(147, 128, 108, 0.25);
+  padding: 0.5rem 0.5rem;
+  border-radius: 2px 0 0 2px;
+}

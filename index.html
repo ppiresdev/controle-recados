@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/storage.js" defer></script>
+    <script src="./assets/js/utils.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+    <title>Sistema de Recados | Login</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="column-left"></section>
+      <section class="column-right">
+        <h1>BEM-VINDO AO SISTEMA DE RECADOS</h1>
+        <form>
+          <div id="inputs">
+            <div class="msgUsuario"></div>
+            <div>
+              <input
+                autocomplete="off"
+                id="inputUsuario"
+                type="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="msgInputUsuario"></div>
+            <div id="divSenha" class="divSenha">
+              <input
+                autocomplete="off"
+                id="inputSenha"
+                type="password"
+                placeholder="Senha"
+              />
+              <i id="visibilidadeBtn" class="visibilidadeBtn"
+                ><span id="icon" class="material-icons-outlined">
+                  visibility_off
+                </span></i
+              >
+            </div>
+            <div class="msgInputSenha"></div>
+          </div>
+          <div id="buttons">
+            <button id="btnEntrar" type="submit">ENTRAR</button>
+
+            <p>
+              Não tem uma conta?
+              <a href="./assets/pages/criar_conta.html">Clique aqui</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
